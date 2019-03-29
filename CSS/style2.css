@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "montserrat", sans-serif;
+}
+
+.landing-page{
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	position: relative;
+	overflow: hidden;
+}
+
+.landing-page::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(quantum-computing.png) no-repeat;
+	background-size: cover;
+	opacity: 0.35;
+	animation: anim 25s linear infinite;
+}
+
+@keyframes anim{
+	50%{
+		transform: scale(1.75);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+.page-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+	max-width: 2000px;
+	text-align: center;
+	padding: 0px 40px;
+}
+
+.page-content h1{
+	color: #eb2f06;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 900;
+	margin-bottom: 20px;
+}
+
+.page-content h2{
+	color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.page-content a{
+	display: inline-block;
+	text-decoration: none;
+	color: green;
+	background: #000;
+	opacity: .75;
+	border: 2px solid green;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	transition: 0.4s linear;
+}
+
+.page-content a:hover{
+	color: white;
+	background: green;
+}
+
+.page-content table{
+    color: #fff;
+    font-size: 14px;
+}
+
+table{
+	width: 1000px;
+	border: 2px solid green;
+    opacity: .8;
+    text-align: center;
+    color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+tr, th, td{
+	border: 2px solid green;
+    background: #000;
+    padding: 10px;
+}
+
+p{
+	text-align: left;
+	text-transform: capitalize;
+	font-family: 'Lucida Sans';
+	font-size: 20px;
+	font-weight: bolder;
+	color: azure;
+}

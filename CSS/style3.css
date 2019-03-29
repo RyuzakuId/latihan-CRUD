@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.landing-page{
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	position: fixed;
+	overflow: hidden;
+}
+
+.landing-page::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: url(quantum-computing.png) no-repeat;
+	background-size: cover;
+	opacity: 0.35;
+	animation: anim 25s linear infinite;
+}
+
+@keyframes anim{
+	50%{
+		transform: scale(1.75);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+.page-content{
+	color: azure;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+	text-transform: uppercase;
+	font-weight: 12px;
+}
+
+.kotak{
+	text-align: center;
+	max-width: 800px;
+	height: 360px;
+	font-family: Helvetica;
+	border: 2px solid green;
+	background: black;
+	opacity: .75;
+}
+
+.x input{
+	width: 250px;
+	height: 30px;
+	text-align: center;	
+	background: none;
+	border: 2px solid white;
+	color: white;
+	margin: 10px;
+}
+
+.x input:hover{
+	border: 2px solid green;
+}
+
+.x textarea{
+	width: 250px;
+	height: 30px;
+	text-align: center;
+	padding-top: 18px;
+	background: none;
+	border: 2px solid white;
+	color: white;
+	margin: 10px;
+}
+
+.x textarea:hover{
+	border: 2px solid green;
+}
+
+#submit{
+	color: white;
+	border: 2px solid white;
+	width: 250px;
+	height: 40px;
+	background: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#submit:hover{
+	cursor: pointer;
+	background: white;
+	color: green;
+	transition: 0.75s;
+}
